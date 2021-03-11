@@ -1,0 +1,49 @@
+<!<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8"
+   <meta name="description" content="Welcome to femboy hooters">
+   <title>OwO Welcome</title>
+   <link rel="stylesheet" href="index/css/style.css">
+   <script type="text/javascript">
+  function startTime()
+  {
+  var today=new Date();
+  var h=today.getHours();
+  var m=today.getMinutes();
+  var s=today.getSeconds();
+
+  m=checkTime(m);
+  s=checkTime(s);
+  document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+  t=setTimeout('startTime()',500);
+  }
+  function checkTime(i)
+  {
+  if (i<10)
+  {
+  i="0" + i;
+  }
+  return i;
+  }
+
+  </script>
+ </head>
+ <body onload="startTime()">
+   <div id="txt"></div>
+    <video src="index/180.mp4" poster="index/thumbnail.jpg" controls width="500">sorry the video failed to load</video>
+    <div id="links">
+      <ul>
+       <li><a href="about me.html">about me</a> </li>
+       <li><a href="my links.html">my pages/links</a> </li>
+       <li><a href="Projects.html">projects</a> </li>
+       OwO
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+
+ </body>
+</html>
+<!-- <a href="index.html">back to home menu</a>-->
